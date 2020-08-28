@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>overflow</title>
+    <style>
+      body {
+        background-color: #999;
+      }
+      .outter {
+        background-color: tomato;
+        /* position: relative; */
+        border: 1px red solid;
+      }
+      .container {
+        margin: 0 auto;
+        /* display: inline-block; */
+        background-color: white;
+        height: 100px;
+
+        overflow-y: scroll;
+        /* overflow-x: auto; */
+      }
+      img {
+        vertical-align: top;
+      }
+
+      .center {
+        /* Center of the parent tag. */
+        position: absolute;
+        left: 50%;
+        top: 50%; /* percent of parent size */
+        transform: translate(-50%, -50%); /* self percent of size */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outter">
+      <div class="container">
+        <img src="hambuger.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

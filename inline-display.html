@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inline style blank</title>
+    <style>
+      body {
+        background-color: #999;
+      }
+      .wrapper {
+        background-color: white;
+        width: 400px;
+        margin: 0 auto;
+      }
+
+      .center {
+        /* Center of the parent tag. */
+        position: absolute;
+        left: 50%;
+        top: 50%; /* percent of parent size */
+        transform: translate(-50%, -50%); /* self percent of size */
+      }
+      span {
+        background-color: orangered;
+        padding-left: 4px;
+      }
+
+      .blockstyle {
+        /* display: block; */
+        vertical-align: bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <span
+        ><img
+          src="hambuger.jpg"
+          alt=""
+          width="300px"
+          height="auto"
+          class="blockstyle"
+        />
+        Text..</span
+      >
+    </div>
+  </body>
+</html>
